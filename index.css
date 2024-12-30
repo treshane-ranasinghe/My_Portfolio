@@ -2,10 +2,9 @@ nav .header {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 20px;
-  font-family: sans-serif;
+  padding: 40px;
+  font-family: "Roboto", serif;
   font-size: 20px;
-  
 }
 
 ul {
@@ -14,10 +13,9 @@ ul {
   margin: 0;
   display: flex; /* Make the list items inline */
   gap: 10px;
-  font-family: sans-serif;
-  font-size: 20px;
+  font-family: "Roboto", serif;
+  font-size: 22px;
   font-weight: bold;
-
 }
 
 li {
@@ -25,10 +23,94 @@ li {
 }
 
 ul a {
-  
   text-decoration: none;
 }
 
-body{
+body {
   background-color: whitesmoke;
+}
+
+.welcome-text {
+  margin-left: 100px;
+}
+#smallText {
+  text-align: left;
+  font-family: "Roboto", serif;
+  font-size: 15px;
+  margin-left: 80px;
+  max-width: 500px; /* Adjust width to your preference */
+  margin: 0 0 0 0; /* Center the container */
+  text-align: justify; /* Keep text aligned to the left */
+}
+
+#smallText1 {
+  text-align: left;
+  font-family: "Roboto", serif;
+  font-size: 20px;
+  margin-left: 80px;
+  max-width: 500px; /* Adjust width to your preference */
+  margin: 0 0 0 0; /* Center the container */
+  text-align: justify; /* Keep text aligned to the left */
+}
+
+#bigText {
+  text-align: left;
+  font-family: "Roboto", serif;
+  font-size: 40px;
+  font-weight: bold;
+  margin-left: 0;
+  margin-top: 150px;
+  max-width: 900px;
+  margin: 0 0 0 0 auto;
+}
+
+#home-pic {
+  width: 0px; /* Adjust image size */
+  height: auto;
+  border-radius: 10px;
+  margin-top: 100px;
+  border-radius: 20px; /* Rounded corners */
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2); /* Optional shadow */
+}
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif; /* Use any clean font */
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  gap: 150px;
+}
+
+.experience-section {
+  margin-top: 20px
+}
+.experience-card {
+  background-color: #f4f4f4;
+  border-left: 5px solid purple;
+  margin-bottom: 20px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+}
+.experience-card h3 {
+  margin: 0;
+  font-size: 22px;
+  color: #333;
+}
+.experience-card h4 {
+  margin: 5px 0;
+  color: #666;
+}
+.experience-card p {
+  color: #555;
+  line-height: 1.6;
+}
+
+#experience{
+  margin-left: 100px
 }
