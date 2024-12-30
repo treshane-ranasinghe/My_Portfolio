@@ -112,5 +112,15 @@ html {
 }
 
 #experience{
-  margin-left: 100px
+  margin-left: 100px;
+  font-size: 40px;
+  font-family: "Roboto", serif;
+  
+}
+
+#social-links{
+  font-family: "Roboto", serif;
+  color: red;
+  gap: 20px;
+
 }
