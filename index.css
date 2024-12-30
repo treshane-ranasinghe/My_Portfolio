@@ -124,3 +124,16 @@ html {
   gap: 20px;
 
 }
+
+@media screen and (max-width: 600px)
+{
+  smallText{
+    font-size: 35px;
+    line-height: 50px;
+  }
+
+  experience-section{
+    font-size: 35px;
+    
+  }
+}
