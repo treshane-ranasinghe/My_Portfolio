@@ -276,45 +276,70 @@ footer {
   font-size: 32px;
 }
 
-
 .skills-container {
-  width: 80%;
-  margin: 50px auto;
+  width: 90%;  /* Adjust width for smaller screens */
+  margin: 30px auto;
   text-align: center;
 }
+
 .skills-container h1 {
   color: #a100ff;
+  font-size: 2rem;  /* Adjust font size */
 }
+
 .skills-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 30px;
+  gap: 20px;
   margin-top: 30px;
 }
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .skills-grid {
+      grid-template-columns: 1fr;  /* Stack items on mobile */
+  }
+  .skill-name {
+      font-size: 1rem;
+  }
+  .progress-bar {
+      height: 8px;
+  }
+  .percentage {
+      top: -25px;
+      font-size: 0.9rem;
+  }
+}
+
 .skill {
   text-align: left;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
+
 .skill-name {
-  margin-bottom: 10px;
+  margin-bottom: 8px;
   font-weight: 600;
   color: #666;
+  font-size: 1.1rem;
 }
+
 .progress-bar {
   position: relative;
-  height: 10px;
+  height: 12px;
   background-color: #ddd;
   border-radius: 10px;
   overflow: hidden;
 }
+
 .progress {
   height: 100%;
   background: linear-gradient(90deg, #a100ff, #c351ff);
   transition: width 1s ease;
 }
+
 .percentage {
   position: absolute;
-  top: -30px;
+  top: -28px;
   right: 0;
   font-weight: 600;
   color: #a100ff;
