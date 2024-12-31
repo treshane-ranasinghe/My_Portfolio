@@ -24,8 +24,9 @@ ul {
   list-style: none;
   display: flex;
   gap: 25px;
-  padding: 0;
+  padding: 20px;
   margin: 0;
+  font-size: 20px;
 }
 
 ul a {
@@ -232,4 +233,36 @@ footer {
   .experience-card p {
     font-size: 14px;
   }
+}
+
+
+.experience-card {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 70%;
+  margin: 20px auto;
+  transition: transform 0.3s ease;
+}
+
+.experience-card:hover {
+  transform: translateY(-5px);
+}
+
+.view-btn {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 25px;
+  font-size: 1rem;
+  color: white;
+  background-color: #6a0dad;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.view-btn:hover {
+  background-color: #500b78;
 }
