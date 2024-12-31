@@ -33,11 +33,13 @@ ul a {
   text-decoration: none;
   color: purple;
   font-weight: bold;
-  font-size: 18px;
+  font-size: 26px;
+  
 }
 
 li {
   margin: 0;
+  
 }
 
 /* Welcome Section */
@@ -265,4 +267,55 @@ footer {
 
 .view-btn:hover {
   background-color: #500b78;
+}
+
+
+#sk{
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-size: 32px;
+}
+
+
+.skills-container {
+  width: 80%;
+  margin: 50px auto;
+  text-align: center;
+}
+.skills-container h1 {
+  color: #a100ff;
+}
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  margin-top: 30px;
+}
+.skill {
+  text-align: left;
+  margin-bottom: 20px;
+}
+.skill-name {
+  margin-bottom: 10px;
+  font-weight: 600;
+  color: #666;
+}
+.progress-bar {
+  position: relative;
+  height: 10px;
+  background-color: #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.progress {
+  height: 100%;
+  background: linear-gradient(90deg, #a100ff, #c351ff);
+  transition: width 1s ease;
+}
+.percentage {
+  position: absolute;
+  top: -30px;
+  right: 0;
+  font-weight: 600;
+  color: #a100ff;
 }
