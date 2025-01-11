@@ -105,7 +105,27 @@ li {
   font-size: 32px;
   text-align: center;
   margin: 50px 0 30px;
+  animation-name: slide;
 }
+
+#experience1 {
+  font-size: 32px;
+  text-align: center;
+  margin: 50px 0 30px;
+  animation-name: slide;
+  animation-duration: 2s; /* Add duration to make animation visible */
+  animation-fill-mode: forwards; /* Ensures the element stays in the final position */
+}
+
+@keyframes slide {
+  from {
+    transform: translate(150vw, 0); /* Use transform: translate(x, y) */
+  }
+  to {
+    transform: translate(0, 0);
+  }
+}
+
 
 .experience-section {
   display: flex;
@@ -123,6 +143,18 @@ li {
   border-left: 5px solid purple;
   border-radius: 10px;
   box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+  animation-duration: 3s;
+  animation-name: slide-in;
+}
+
+@keyframes slide-in{
+  from{
+    translate: 150vw 0;
+
+  }
+  to{
+    translate: 0 0;
+  }
 }
 
 .experience-card h3 {
