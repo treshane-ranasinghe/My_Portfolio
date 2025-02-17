@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>car-rental-web-app</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      nav .header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 15px 10px;
+      }
+
+      ul {
+        list-style: none;
+        display: flex;
+        gap: 25px;
+        padding: 20px;
+        margin: 0;
+        font-size: 20px;
+      }
+
+      ul a {
+        text-decoration: none;
+        color: black;
+        font-weight: bold;
+        font-size: 26px;
+      }
+
+      li {
+        margin: 0;
+      }
+
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        
+      }
+
+      .gallery-container {
+        width: 80%;
+        margin: 0 auto;
+        overflow: hidden;
+        padding-bottom: 3rem; /* Space before the footer */
+        padding-top: 3rem;
+      }
+
+      .gallery {
+        display: flex;
+        transition: transform 0.5s ease;
+      }
+
+      .gallery-item {
+        flex: 0 0 100%;
+      }
+
+      .gallery-item img {
+        width: 100%;
+        height: auto;
+        display: block;
+        border-radius: 20px;
+        opacity: 0; /* Initially hidden */
+        animation: fadeInOut 2s ease-in-out forwards;
+      }
+
+      @keyframes fadeInOut {
+        0% {
+          opacity: 0;
+        }
+        100% {
+          opacity: 1;
+        }
+      }
+
+      button {
+        position: absolute;
+        top: 50%;
+        background: linear-gradient(90deg, #ff5e99, #c351ff);
+        color: white;
+        padding: 20px;
+        border: none;
+        cursor: pointer;
+        z-index: 10;
+        transform: translateY(-50%);
+        font-size: 24px;
+        opacity: 0; /* Initially hidden */
+        visibility: hidden;
+        transition: opacity 0.3s ease, visibility 0.3s ease, transform 0.2s ease;
+        border-radius: 50%;
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+        width: 70px;
+        height: 70px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .gallery-container:hover button {
+        opacity: 1; /* Make visible */
+        visibility: visible;
+      }
+
+      button:hover {
+        background-color: rgba(255, 255, 255, 0.8);
+        color: black;
+        transform: translateY(-50%) scale(1.1);
+      }
+
+      button.prev {
+        left: 80px;
+      }
+
+      button.next {
+        right: 80px;
+      }
+
+      button::before {
+        font-size: 30px;
+        font-family: "Arial", sans-serif;
+        font-weight: bold;
+      }
+
+      button.prev::before {
+        content: "❮"; /* Left arrow */
+      }
+
+      button.next::before {
+        content: "❯"; /* Right arrow */
+      }
+
+      footer {
+        background-color: #1e3a56;
+        color: white;
+        text-align: center;
+        padding: 1.5rem 0;
+        margin-top: 3rem;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <div class="header">
+        <ul class="ul">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#skills">skills</a></li>
+          <li><a href="#about">Projects</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="gallery-container">
+      <button class="prev">Prev</button>
+      <div class="gallery">
+        <div class="gallery-item">
+          <img src="car-rental/landing-page.png" alt="Project 1" />
+        </div>
+        <div class="gallery-item">
+          <img src="car-rental/how-it-works.png" alt="Project 2" />
+        </div>
+        <div class="gallery-item">
+          <img src="car-rental/package01.png" alt="Project 3" />
+        </div>
+        <div class="gallery-item">
+          <img src="car-rental/package02.png" alt="Project 3" />
+        </div>
+        <div class="gallery-item">
+          <img src="car-rental/package03.png" alt="Project 3" />
+        </div>
+        <div class="gallery-item">
+          <img src="car-rental/package04.png" alt="Project 3" />
+        </div>
+        <div class="gallery-item">
+          <img src="car-rental/package05.png" alt="Project 3" />
+        </div>
+        <div class="gallery-item">
+          <img src="car-rental/why-choose-us.png" alt="Project 3" />
+        </div>
+        <div class="gallery-item">
+          <img src="car-rental/subsciption.png" alt="Project 3" />
+        </div>
+        <div class="gallery-item">
+          <img src="car-rental/feedback.png" alt="Project 3" />
+        </div>
+        <!-- Add more gallery items here -->
+      </div>
+      <button class="next">Next</button>
+    </div>
+
+    <script>
+      const prevBtn = document.querySelector(".prev");
+      const nextBtn = document.querySelector(".next");
+      const gallery = document.querySelector(".gallery");
+      let currentIndex = 0;
+
+      function updateGallery() {
+        gallery.style.transform = `translateX(-${currentIndex * 100}%)`;
+      }
+
+      prevBtn.addEventListener("click", () => {
+        if (currentIndex > 0) {
+          currentIndex--;
+          updateGallery();
+        }
+      });
+
+      nextBtn.addEventListener("click", () => {
+        if (currentIndex < gallery.children.length - 1) {
+          currentIndex++;
+          updateGallery();
+        }
+      });
+    </script>
+  </body>
+  <footer>
+    <p>&copy; 2025 T A Ranasinghe</p>
+  </footer>
+</html>
