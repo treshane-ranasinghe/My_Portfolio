@@ -8,9 +8,6 @@ html {
   scroll-behavior: smooth;
 }
 
-body {
-  background-color: #000000;
-}
 
 /* Navigation Styles */
 nav .header {
@@ -31,9 +28,9 @@ ul {
 
 ul a {
   text-decoration: none;
-  color: white;
-  font-weight: bold;
-  font-size: 26px;
+  color: black;
+  
+  font-size: 23px;
   
 }
 
@@ -63,7 +60,7 @@ li {
   font-size: 30px;
   margin-bottom: 10px;
   line-height: 1.2;
-  color: white;
+  
 }
 
 #smallText,
@@ -73,7 +70,7 @@ li {
   max-width: 90%;
   text-align: justify;
   line-height: 1.6;
-  color: white;
+  
 }
 
 /* Social Links */
@@ -83,12 +80,13 @@ li {
   justify-content: center;
   flex-wrap: wrap;
   gap: 30px;
+  color: linear-gradient(90deg, #FF5E99, #c351ff);
   
 }
 
 #social-links a {
   text-decoration: none;
-  color: #9B5DE5;
+  color: linear-gradient(90deg, #FF5E99, #c351ff);
   font-size: 18px;
   font-weight: bold;
 }

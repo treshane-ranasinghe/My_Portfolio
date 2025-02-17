@@ -1,166 +1,190 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>car-rental-web-app</title>
-    
+
     <style>
+      body {
+        font-family: "Poppins", sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f0f5f9;
+        color: #333;
+      }
+      #header {
+        background-color: #1e3a56;
+        color: white;
+        padding: 2rem 1rem;
+        text-align: center;
+        font-size: 1.8rem;
+      }
+      .container {
+        width: 85%;
+        margin: 2rem auto;
+      }
+      .section {
+        background-color: white;
+        padding: 2rem;
+        margin-bottom: 2rem;
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+        border-radius: 12px;
+        transition: transform 0.3s ease-in-out;
+      }
+      .section:hover {
+        transform: translateY(-5px);
+      }
+      h2,
+      h3 {
+        color: #1e3a56;
+      }
+      .highlight-list {
+        list-style: none;
+        padding: 0;
+      }
+      .highlight-list li {
+        margin: 1rem 0;
+        padding: 1rem;
+        background-color: #e8f0fe;
+        border-left: 6px solid #1e3a56;
+        border-radius: 8px;
+      }
+      .image-container {
+        text-align: center;
+        margin: 2rem 0;
+      }
+      .image-container img {
+        width: 100%;
+        max-width: 1100px;
+        border-radius: 10px;
+      }
+      .download-btn {
+        display: inline-block;
+        background-color: #10b981;
+        color: white;
+        padding: 1rem 2rem;
+        text-decoration: none;
+        border-radius: 10px;
+        font-size: 1.1rem;
+        transition: background-color 0.3s ease;
+      }
+      .download-btn:hover {
+        background-color: #059669;
+      }
+      footer {
+        background-color: #1e3a56;
+        color: white;
+        text-align: center;
+        padding: 1.5rem 0;
+        margin-top: 3rem;
+      }
 
-        
-        body {
-            font-family: 'Poppins', sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f0f5f9;
-            color: #333;
-        }
-        header {
-            background-color: #1e3a56;
-            color: white;
-            padding: 2rem 1rem;
-            text-align: center;
-            font-size: 1.8rem;
-            
-        }
-        .container {
-            width: 85%;
-            margin: 2rem auto;
-        }
-        .section {
-            background-color: white;
-            padding: 2rem;
-            margin-bottom: 2rem;
-            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
-            border-radius: 12px;
-            transition: transform 0.3s ease-in-out;
-        }
-        .section:hover {
-            transform: translateY(-5px);
-        }
-        h2, h3 {
-            color: #1e3a56;
-        }
-        .highlight-list {
-            list-style: none;
-            padding: 0;
-        }
-        .highlight-list li {
-            margin: 1rem 0;
-            padding: 1rem;
-            background-color: #e8f0fe;
-            border-left: 6px solid #1e3a56;
-            border-radius: 8px;
-        }
-        .image-container {
-            text-align: center;
-            margin: 2rem 0;
-        }
-        .image-container img {
-            width: 100%;
-            max-width: 1100px;
-            border-radius: 10px;
-        }
-        .download-btn {
-            display: inline-block;
-            background-color: #10b981;
-            color: white;
-            padding: 1rem 2rem;
-            text-decoration: none;
-            border-radius: 10px;
-            font-size: 1.1rem;
-            transition: background-color 0.3s ease;
-        }
-        .download-btn:hover {
-            background-color: #059669;
-        }
-        footer {
-            background-color: #1e3a56;
-            color: white;
-            text-align: center;
-            padding: 1.5rem 0;
-            margin-top: 3rem;
-        }
+      nav .header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 15px 10px;
+      }
+
+      ul {
+        list-style: none;
+        display: flex;
+        gap: 25px;
+        padding: 20px;
+        margin: 0;
+        font-size: 20px;
+      }
+
+      ul a {
+        text-decoration: none;
+        color: black;
+
+        font-size: 23px;
+      }
+
+      li {
+        margin: 0;
+      }
     </style>
-</head>
-<body>
-    
+  </head>
+  <body>
     <nav>
-        <div class="header">
-          <ul class="ul">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="#skills">skills</a></li>
-            <li><a href="#about">Projects</a></li>
-          </ul>
-        </div>
-      </nav>
-    
+      <div class="header">
+        <ul class="ul">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#skills">skills</a></li>
+          <li><a href="#about">Projects</a></li>
+        </ul>
+      </div>
+    </nav>
+
     <div class="container">
-        <section class="section project-intro">
-            <h2>Car Rental Website</h2>
-            <p><strong>Personal Project</strong>)</p>
-            
-            <p><strong>Date of Completion:</strong> December 2024</p>
-            
-        </section>
+      <section class="section project-intro">
+        <h2>Car Rental Website</h2>
+        <p><strong>Personal Project</strong>)</p>
 
-        <section class="section abstract">
-            <h3></h3>
-            <p style="text-align: justify;">Designed and developed the frontend for a car rental system, focusing on a clean,
-              intuitive user interface that enhances the customer experience. Conducted research
-              on user preferences to create an easy-to-navigate layout, ensuring smooth interactions
-              for booking and browsing available cars. Implemented responsive design techniques to ensure
-              optimal performance across various devices.
-        </section>
+        <p><strong>Date of Completion:</strong> December 2024</p>
+      </section>
 
-        <section class="section highlights">
-            
-            <h3 style="text-align: center;"> </h3>
-            <div class="image-container">
-                <img src="car-rental/landing-page.png" alt="">
-            </div>
-            <h3 style="text-align: center;"> </h3>
-            <div class="image-container">
-                <img src="car-rental/how-it-works.png" alt="">
-            </div>       
-            <h3 style="text-align: center;"> </h3>
-            <div class="image-container">
-                <img src="car-rental/package01.png" alt="">
-            </div>   
-            <h3 style="text-align: center;">  </h3>
-            <div class="image-container">
-                <img src="car-rental/package02.png" alt="">
-            </div>   
-            <h3 style="text-align: center;">  </h3>
-            <div class="image-container">
-                <img src="car-rental/package03.png" alt="">
-            </div>   
-            <h3 style="text-align: center;"> </h3>
-            <div class="image-container">
-                <img src="car-rental/package04.png" alt="">
-            </div>   
-            <h3 style="text-align: center;"> </h3>
-            <div class="image-container">
-                <img src="car-rental/package05.png" alt="">
-            </div> 
-            <h3 style="text-align: center;"> </h3>
-            <div class="image-container">
-                <img src="car-rental/why-choose-us.png" alt="">
-            </div>     
-            <h3 style="text-align: center;">  </h3>
-            <div class="image-container">
-                <img src="car-rental/subsciption.png" alt="">
-            </div>
-            <h3 style="text-align: center;"> </h3>
-            <div class="image-container">
-                <img src="car-rental/feedback.png" alt="">
-            </div>      
-        </section>
+      <section class="section abstract">
+        <h3></h3>
+        <p style="text-align: justify">
+          Designed and developed the frontend for a car rental system, focusing
+          on a clean, intuitive user interface that enhances the customer
+          experience. Conducted research on user preferences to create an
+          easy-to-navigate layout, ensuring smooth interactions for booking and
+          browsing available cars. Implemented responsive design techniques to
+          ensure optimal performance across various devices.
+        </p>
+      </section>
+
+      <section class="section highlights">
+        <h3 style="text-align: center"></h3>
+        <div class="image-container">
+          <img src="car-rental/landing-page.png" alt="" />
+        </div>
+        <h3 style="text-align: center"></h3>
+        <div class="image-container">
+          <img src="car-rental/how-it-works.png" alt="" />
+        </div>
+        <h3 style="text-align: center"></h3>
+        <div class="image-container">
+          <img src="car-rental/package01.png" alt="" />
+        </div>
+        <h3 style="text-align: center"></h3>
+        <div class="image-container">
+          <img src="car-rental/package02.png" alt="" />
+        </div>
+        <h3 style="text-align: center"></h3>
+        <div class="image-container">
+          <img src="car-rental/package03.png" alt="" />
+        </div>
+        <h3 style="text-align: center"></h3>
+        <div class="image-container">
+          <img src="car-rental/package04.png" alt="" />
+        </div>
+        <h3 style="text-align: center"></h3>
+        <div class="image-container">
+          <img src="car-rental/package05.png" alt="" />
+        </div>
+        <h3 style="text-align: center"></h3>
+        <div class="image-container">
+          <img src="car-rental/why-choose-us.png" alt="" />
+        </div>
+        <h3 style="text-align: center"></h3>
+        <div class="image-container">
+          <img src="car-rental/subsciption.png" alt="" />
+        </div>
+        <h3 style="text-align: center"></h3>
+        <div class="image-container">
+          <img src="car-rental/feedback.png" alt="" />
+        </div>
+      </section>
     </div>
-    
 
     <footer>
-        <p>&copy; 2025 T A Ranasinghe </p>
+      <p>&copy; 2025 T A Ranasinghe</p>
     </footer>
-</body>
+  </body>
 </html>
