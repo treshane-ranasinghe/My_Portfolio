@@ -1,188 +1,187 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="index.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
       rel="stylesheet"
     />
-    <title>Home</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Web Design Mastery | tAgency</title>
   </head>
   <body>
     <nav>
-      <div class="header">
-        <ul class="ul">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="#skills">skills</a></li>
-          <li><a href="#about">Projects</a></li>
-        </ul>
+      <div class="nav__header">
+        <div class="nav__logo">
+          <a href="#"><span></span>T A Ranasinghe</a>
+        </div>
+        <div class="nav__menu__btn" id="menu-btn">
+          <i class="ri-menu-line"></i>
+        </div>
+      </div>
+      <ul class="nav__links" id="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skill">Skills</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#review">Testimonials</a></li>
+        <li><a href="assets/CV.pdf" download="">Download CV</a></li>
+      </ul>
+      <div class="nav__btn">
+        <a href="assets/CV.pdf" download="">Download CV</a>
       </div>
     </nav>
 
-    <section id="welcome">
-      <div class="container">
-        <div class="welcome-text">
-          <h1 id="bigText">Welcome to my personal portfolio 👋</h1>
-          <h3 id="smallText1"></h3>
-          <br />
-          <h3 id="smallText">
-            An aspiring Machine Learning Engineer passionate about AI and
-            data-driven solutions. Currently pursuing a Computing degree, I’m
-            building skills in Python, data science, and web development to
-            create intelligent applications. I love blending software
-            engineering with machine learning to solve real-world problems.
-            Check out my portfolio to see my journey in AI and ML 🚀🧠 📈🔍📊!
-          </h3>
-          <br />
-          <div id="social-links">
-            <a href="">Github Profile</a>
-            <a href="">LinkedIn Profile</a>
-          </div>
+    <header class="section__container header__container" id="about">
+      <div class="header__image">
+        <img src="assets/header.png" alt="header" />
+      </div>
+      <div class="header__content">
+        
+        <h1>Aspiring <span>Frontend</span> Developer</h1>
+        <p class="section__description">
+          Welcome to my personal portfolio! With a passion for turning ideas
+          into visually stunning digital experiences, I specialize in crafting
+          unique, user-friendly designs.
+        </p>
+        <div class="header__btns">
+          <button class="btn">Contact Me</button>
+          <a href="#">
+            View Portfolio
+            <span><i class="ri-arrow-right-up-line"></i></span>
+          </a>
         </div>
+      </div>
+    </header>
 
-        <div id="home-pic">
-          <img src="assets/home2.jpg" alt="" />
+    <section class="section__container stats__container">
+      <div class="stats__card">
+        <h4>2+</h4>
+        <p>Satisfied clients</p>
+      </div>
+      <div class="stats__divider"></div>
+      <div class="stats__card">
+        <h4>2+</h4>
+        <p>Project completed</p>
+      </div>
+      <div class="stats__divider"></div>
+      <div class="stats__card">
+        <h4>5+</h4>
+        <p>Reviews given</p>
+      </div>
+    </section>
+
+    <section class="section__container skill__container" id="skill">
+      <div class="skill__content">
+        <p class="section__subheader">My Skills</p>
+        <h2 class="section__header">
+          Why Hire Me For Your Next <span>Project?</span>
+        </h2>
+        <p class="section__description">
+          My commitment to quality, attention to detail, and passion for
+          innovation ensure that every project is a success.
+        </p>
+        <div class="skill__btn">
+          <button class="btn">Hire Me</button>
+        </div>
+      </div>
+      <div class="skill__grid">
+        <div class="skill__card">
+          <span><i class="ri-pulse-line"></i></span>
+          <h4>Visual Design</h4>
+          <p>
+            Creating stunning, user-friendly interfaces that captivate and
+            engage.
+          </p>
+        </div>
+        <div class="skill__card">
+          <span><i class="ri-pencil-ruler-2-line"></i></span>
+          <h4>Design Prototype</h4>
+          <p>
+            Developing interactive prototypes & designs to visualize and refine
+            your ideas.
+          </p>
+        </div>
+        <div class="skill__card">
+          <span><i class="ri-graduation-cap-line"></i></span>
+          <h4>UX Research</h4>
+          <p>
+            Conducting thorough research to ensure intuitive and effective user
+            experiences.
+          </p>
         </div>
       </div>
     </section>
 
-    <section id="skills">
-      <script src="percen.js"></script>
-      <br />
-      <br />
-      <h1 id="sk">Skills</h1>
-      <div class="skills-container">
-        <div class="skills-grid">
-          <div class="skill">
-            <div class="skill-name">HTML 5</div>
-            <div class="progress-bar">
-              <div class="progress" style="width: 90%"></div>
-              <span class="percentage">90%</span>
-            </div>
-          </div>
-
-          <div class="skill">
-            <div class="skill-name">JAVASCRIPT</div>
-            <div class="progress-bar">
-              <div class="progress" style="width: 90%"></div>
-              <span class="percentage">90%</span>
-            </div>
-          </div>
-
-          <div class="skill">
-            <div class="skill-name">CSS</div>
-            <div class="progress-bar">
-              <div class="progress" style="width: 85%"></div>
-              <span class="percentage">85%</span>
-            </div>
-          </div>
-
-          <div class="skill">
-            <div class="skill-name">PYTHON</div>
-            <div class="progress-bar">
-              <div class="progress" style="width: 85%"></div>
-              <span class="percentage">85%</span>
-            </div>
-          </div>
-
-          <div class="skill">
-            <div class="skill-name">MARKET RESEARCH</div>
-            <div class="progress-bar">
-              <div class="progress" style="width: 97%"></div>
-              <span class="percentage">97%</span>
-            </div>
-          </div>
-
-          <div class="skill">
-            <div class="skill-name">DIGITAL MARKETING</div>
-            <div class="progress-bar">
-              <div class="progress" style="width: 97%"></div>
-              <span class="percentage">97%</span>
-            </div>
-          </div>
-
-          <div class="skill">
-            <div class="skill-name">CREATIVITY</div>
-            <div class="progress-bar">
-              <div class="progress" style="width: 90%"></div>
-              <span class="percentage">90%</span>
-            </div>
-          </div>
+    <section class="portfolio__container" id="portfolio">
+      <div class="portfolio__content">
+        <p class="section__subheader">Portfolio</p>
+        <h2 class="section__header">
+          My Creative Works Latest <span>Projects</span>
+        </h2>
+        <p class="section__description">
+          From sleek web applications to dynamic user interfaces, these works
+          highlight my ability to bring unique ideas to life.
+        </p>
+        <div class="portfolio__btn">
+          <button class="btn">Show More</button>
+        </div>
+      </div>
+      <div class="portfolio__image__wrapper">
+        <div class="portfolio__image">
+          <img src="assets/portfolio-1.jpg" alt="portfolio" />
+          <img src="assets/portfolio-2.png" alt="portfolio" />
+          <img src="assets/portfolio-3.png" alt="portfolio" />
+          <img src="assets/portfolio-4.png" alt="portfolio" />
+          <img src="assets/portfolio-5.png" alt="portfolio" />
+          <img src="assets/portfolio-6.png" alt="portfolio" />
         </div>
       </div>
     </section>
 
-    <section id="about">
-      <div class="container">
-        <div id="experience1">
-          <h1 id="experience" >My Projects</h1>
-        </div>
-        <div class="experience-section animate">
-          <div class="experience-card">
-            <h3>Market Research</h3>
-            <h4>Jan 2024 - May 2024</h4>
-            <p style="text-align: justify;">
-              Conducted in-depth market analysis to identify trends, customer
-              preferences, and competitive insights. Designed surveys and
-              collected data from over 100 respondents, leading to actionable
-              recommendations.
-            </p>
-            <a href="marketing-Research.html" class="view-btn">View</a>
-          </div> 
+    
 
-          <div class="experience-card">
-            <h3>Coffee Shop</h3>
-            <h4>December 2024 - January 2025</h4>
-            <p style="text-align: justify;">
-              I designed and developed a fully responsive Coffee Shop Web App using HTML, CSS, and JavaScript.
-              This project showcases a modern and visually appealing interface, allowing users to explore the menu,
-              make reservations, and learn more about the shop's ambiance.
-            </p>
-            <a href="coffee-shop.html" class="view-btn">View</a>
-          </div>
-          
-          <div class="experience-card">
-            <h3>Car Rental Website</h3>
-            <h4>November 2024 - December 2024</h4>
-            <p style="text-align: justify;">
-              Designed and developed the frontend for a car rental system, focusing on a clean,
-              intuitive user interface that enhances the customer experience. Conducted research
-              on user preferences to create an easy-to-navigate layout, ensuring smooth interactions
-              for booking and browsing available cars. Implemented responsive design techniques to ensure 
-              optimal performance across various devices.
-            </p>
-            <a href="car-rental.html" class="view-btn">View</a>
-          </div>
-
-          <div class="experience-card">
-            <h3>Online Furniture Store</h3>
-            <h4>December 2024 - January 2025</h4>
-            <p style="text-align: justify;">
-              Designed and developed the frontend of an online furniture shop,
-              creating an intuitive and visually appealing user interface.
-              Ensured responsiveness and seamless user experience across devices
-              using HTML, CSS, and JavaScript. Implemented interactive product displays,
-              navigation, and a user-friendly shopping interface to enhance customer engagement.
-            </p>
-            <a href="furniture.html" class="view-btn">View</a>
-          </div>
-
-          
-            
-
-          
-        </div>
-      </div>
-
-      <script src="script.js"></script>
+    <section class="section__container contact__container">
+      <p class="section__subheader">Contact</p>
+      <h2 class="section__header">Let's Discuss Your <span>Project</span></h2>
+      <p class="section__description">
+        Whether you need a new website, a redesign, or custom functionality,
+        let's collaborate to create something amazing.
+      </p>
+      <form action="/">
+        <input type="text" placeholder="Full name" />
+        <input type="text" placeholder="Your email" />
+        <input type="text" placeholder="Phone number" />
+        <input type="text" placeholder="Budget" />
+        <textarea placeholder="Message"></textarea>
+        <button class="btn">Submit Message</button>
+      </form>
     </section>
-    <footer>
-      <p>&copy; 2024 T A Ranasinghe</p>
+
+    <footer class="section__container footer__container">
+      <p>Copyright © 2024 Web Design Mastery. All rights reserved.</p>
+      <ul class="footer__socials">
+        <li>
+          <a href="#"><i class="ri-facebook-fill"></i></a>
+        </li>
+        <li>
+          <a href="#"><i class="ri-twitter-fill"></i></a>
+        </li>
+        <li>
+          <a href="#"><i class="ri-linkedin-fill"></i></a>
+        </li>
+        <li>
+          <a href="#"><i class="ri-google-fill"></i></a>
+        </li>
+      </ul>
     </footer>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="main.js"></script>
   </body>
 </html>
